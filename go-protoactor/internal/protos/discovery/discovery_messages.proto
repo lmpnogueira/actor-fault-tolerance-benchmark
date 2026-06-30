@@ -1,0 +1,32 @@
+syntax = "proto3";
+
+package messages;
+
+import "common/common.proto";
+
+option go_package = "/messages";
+
+message RegisterChat {
+  string topic = 1;
+  ActorPid ref_server = 2;
+}
+
+message GetChatRef {
+  string topic = 1;
+  ActorPid reply_to = 2;
+}
+
+message ChatNotFound {
+  string topic = 1;
+}
+
+message ChatRefResponse {
+  ActorPid ref = 1;
+}
+
+message ChatRegistered {
+}
+
+message RegistrationFailed {
+  string reason = 1;
+}

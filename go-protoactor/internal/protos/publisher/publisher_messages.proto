@@ -1,0 +1,28 @@
+syntax = "proto3";
+
+package messages;
+
+option go_package = "/messages";
+
+enum EventType {
+  EVENT_TYPE_UNSPECIFIED = 0;
+  MESSAGE_RECEIVED = 1;
+  TEST_STARTED = 2;
+  END_INFO = 3;
+  CLIENT_RECONNECTION_TIME = 4;
+  CONNECTED_TIME = 5;
+  FAULT_INJECTED = 6;
+  FAULT_DETECTED = 7;
+}
+
+message Event {
+  string test_id = 1;
+  int64 timestamp = 2;
+  EventType event = 3;
+  int64 value = 4;
+  string name = 5;
+}
+
+message PublishEvent {
+  Event event = 1;
+}

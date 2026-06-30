@@ -1,0 +1,19 @@
+# Build output
+target/
+project/target/
+project/project/
+
+# IDEs
+.bsp/
+.bloop/
+.metals/
+.scala-build/
+
+# Runtime logs
+logs/
+
+# Local licence key
+.env
+
+# Temporary files
+*.log

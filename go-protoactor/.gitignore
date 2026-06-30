@@ -1,0 +1,16 @@
+# Build artifacts
+bin/
+build/
+
+# Coverage
+coverage.out
+
+# Test binaries
+*.test
+*.exe
+
+# Runtime logs
+logs/
+
+# Temporary files
+*.log

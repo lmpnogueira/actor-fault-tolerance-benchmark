@@ -1,0 +1,30 @@
+syntax = "proto3";
+
+package messages;
+
+option go_package = "/messages";
+
+import "google/protobuf/timestamp.proto";
+
+enum TestType {
+  THROUGHPUT = 0;
+  RECONNECTION = 1;
+  DETECTION = 2;
+}
+
+enum MessageType {
+  NONE = 0;
+  ERROR = 1;
+}
+
+
+message ActorPid {
+  string address = 1;
+  string id = 2;
+}
+
+
+message TriggerTest {
+  google.protobuf.Timestamp Init = 1;
+  google.protobuf.Timestamp End  = 2;
+}

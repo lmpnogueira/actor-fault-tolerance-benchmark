@@ -1,0 +1,8 @@
+# Minimum required package versions
+
+matplotlib>=3.9
+numpy>=2.0
+pandas>=2.2
+pika>=1.3
+PyYAML>=6.0
+seaborn>=0.13

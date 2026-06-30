@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1250" height="170" viewBox="0 0 1250 170">
+
+  <defs>
+
+    <style>
+      .box {
+        fill:#f8f9fa;
+        stroke:#444;
+        stroke-width:2;
+        rx:10;
+        ry:10;
+      }
+
+      .title {
+        font-family:Arial, Helvetica, sans-serif;
+        font-size:19px;
+        font-weight:bold;
+        text-anchor:middle;
+      }
+
+      .text {
+        font-family:Arial, Helvetica, sans-serif;
+        font-size:15px;
+        text-anchor:middle;
+      }
+
+      .arrow {
+        stroke:#444;
+        stroke-width:2.5;
+        fill:none;
+        marker-end:url(#arrow);
+      }
+
+    </style>
+
+    <marker id="arrow"
+            markerWidth="10"
+            markerHeight="10"
+            refX="8"
+            refY="3"
+            orient="auto">
+
+      <path d="M0,0 L8,3 L0,6 Z" fill="#444"/>
+
+    </marker>
+
+  </defs>
+
+  <!-- Configuration -->
+
+  <rect class="box" x="20" y="35" width="210" height="100"/>
+
+  <text class="title" x="125" y="68">Configuration</text>
+  <text class="text" x="125" y="95">Generate benchmark</text>
+  <text class="text" x="125" y="116">configurations</text>
+
+  <line class="arrow" x1="230" y1="85" x2="280" y2="85"/>
+
+  <!-- Execution -->
+
+  <rect class="box" x="280" y="35" width="210" height="100"/>
+
+  <text class="title" x="385" y="68">Execution</text>
+  <text class="text" x="385" y="95">Execute equivalent</text>
+  <text class="text" x="385" y="116">runtime implementations</text>
+
+  <line class="arrow" x1="490" y1="85" x2="540" y2="85"/>
+
+  <!-- Measurement -->
+
+  <rect class="box" x="540" y="35" width="210" height="100"/>
+
+  <text class="title" x="645" y="68">Measurement</text>
+  <text class="text" x="645" y="95">Collect benchmark</text>
+  <text class="text" x="645" y="116">measurements</text>
+
+  <line class="arrow" x1="750" y1="85" x2="800" y2="85"/>
+
+  <!-- Aggregation -->
+
+  <rect class="box" x="800" y="35" width="210" height="100"/>
+
+  <text class="title" x="905" y="68">Aggregation</text>
+  <text class="text" x="905" y="95">Compute benchmark</text>
+  <text class="text" x="905" y="116">metrics</text>
+
+  <line class="arrow" x1="1010" y1="85" x2="1060" y2="85"/>
+
+  <!-- Results -->
+
+  <rect class="box" x="1060" y="35" width="170" height="100"/>
+
+  <text class="title" x="1145" y="68">Results</text>
+  <text class="text" x="1145" y="95">CSV datasets</text>
+  <text class="text" x="1145" y="116">Figures</text>
+
+</svg>

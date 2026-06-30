@@ -1,0 +1,44 @@
+syntax = "proto3";
+
+package messages;
+
+import "common/common.proto";
+
+option go_package = "/messages";
+
+// Orchestrator Messages
+message CreateClient {
+  string name = 1;
+  string testId = 2;
+  TestType testType = 3;
+  string chatTopic = 4;
+  ActorPid mainPid = 5;
+  ActorPid publisherPid = 6;
+  ActorPid discoveryPid = 7;
+  ActorPid supervisorPid = 8;
+}
+
+message CreateInjector {
+  string name = 1;
+  string testId = 2;
+  TestType testType = 3;
+  MessageType msgType = 4;
+  string chatTopic = 5;
+  int32 waitMs = 6;
+  ActorPid mainPid = 7;
+  ActorPid publisherPid = 8;
+  ActorPid discoveryPid = 9;
+  ActorPid chatPid = 10;
+  ActorPid supervisorPid = 11;
+}
+
+// Client 
+
+message ReceiveMessage {
+  ActorPid from = 1;
+}
+
+message ClientRegistered {
+  ActorPid server = 1;
+  ActorPid supervisor = 2;
+}

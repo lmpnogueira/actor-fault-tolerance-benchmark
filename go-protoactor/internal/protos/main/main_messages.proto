@@ -1,0 +1,29 @@
+syntax = "proto3";
+
+package messages;
+
+import "common/common.proto";
+
+option go_package = "/messages";
+
+message ChatInfo {
+  string topic = 1;
+  ActorPid pid = 2;
+}
+
+message ServerGroup {
+  ActorPid supervisor = 1;
+  repeated ChatInfo chats = 2;
+}
+
+message ClientConnected {
+  ActorPid client = 1;
+  ChatInfo chat = 2;
+  ActorPid supervisor = 3;
+}
+
+message InjectorConnectedMain {
+  ActorPid injector = 1;
+  string topic = 2;
+  ActorPid supervisor = 3;
+}

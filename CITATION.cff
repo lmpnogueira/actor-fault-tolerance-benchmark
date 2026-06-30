@@ -1,0 +1,50 @@
+```yaml
+cff-version: 1.2.0
+title: "Benchmarking Fault-Tolerance Characteristics of Actor-Based Runtimes"
+message: "If you use this benchmark framework in your research, please cite the accompanying article."
+
+type: software
+
+authors:
+  - family-names: "Nogueira"
+    given-names: "Luís"
+    orcid: "https://orcid.org/0000-0002-7094-0458"
+
+  - family-names: "Coelho"
+    given-names: "Jorge"
+    orcid: "https://orcid.org/0000-0002-3395-6426"
+
+repository-code: "https://github.com/<username>/<repository>"
+
+license: MIT
+
+abstract: >
+  A language-independent benchmarking framework for evaluating
+  fault-tolerance characteristics of actor-based runtimes through
+  equivalent implementations in Elixir/BEAM, Scala/Akka, and
+  Go/Proto.Actor.
+
+keywords:
+  - actor model
+  - distributed systems
+  - fault tolerance
+  - benchmarking
+  - Elixir
+  - BEAM
+  - Scala
+  - Akka
+  - Go
+  - Proto.Actor
+
+references:
+  - type: article
+    title: "Benchmarking Fault-Tolerance Characteristics of Actor-Based Runtimes"
+    authors:
+      - family-names: "Nogueira"
+        given-names: "Luís"
+      - family-names: "Coelho"
+        given-names: "Jorge"
+    journal: "Computers"
+    year: 2026
+    status: "submitted"
+```

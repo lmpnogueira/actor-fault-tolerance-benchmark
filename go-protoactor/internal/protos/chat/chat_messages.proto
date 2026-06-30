@@ -1,0 +1,50 @@
+syntax = "proto3";
+
+package messages;
+
+import "common/common.proto";
+import "google/protobuf/timestamp.proto";
+
+option go_package = "/messages";
+
+// Orchestrator Messages
+message CreateSupChat {
+  string name = 1;
+  int32 chats_number = 2;
+  ActorPid publisherPid = 3;
+  ActorPid discoveryPid = 4;
+  ActorPid sender = 5;
+}
+
+// Supervisor
+message CreateServers {
+	int32 Count = 1;
+}
+
+message StopAll {
+}
+
+// Chat
+
+message ConnectClient {
+  string username = 1;
+  ActorPid reply_to = 2;
+}
+
+message OrganicMessage {
+  string content = 1;
+}
+
+message ConnectInjector {
+  ActorPid injector = 1;
+}
+
+message PanicMessage {
+}
+
+message InjectorConnectedServer {
+}
+
+message EndTestTime {
+  google.protobuf.Timestamp end = 1;
+}

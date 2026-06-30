@@ -1,0 +1,13 @@
+params:
+  test_type: throughput
+  test_duration_seconds: 60
+
+  num_supervisor: 1
+  chats_per_sup: 256
+  clients_per_server: 5
+
+  msg_type: error
+  fault_pause_ms: 5000
+
+  client_base_rate: 100
+  client_ceil_rate: 400

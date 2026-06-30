@@ -1,0 +1,32 @@
+// syntax = "proto3";
+
+// package messages;
+
+// option go_package = "new_example/messages";
+
+// message ActorPid {
+//   string address = 1;
+//   string id = 2;
+// }
+
+// // Discovery messages
+// message RegisterChat {
+//   string topic = 1;
+//   ActorPid pid = 2;
+// }
+
+// message LookupChat {
+//   string topic = 1;
+// }
+
+// message ChatFound {
+//   ActorPid pid = 1;
+// }
+
+// message ChatNotFound {}
+
+// // Chat message
+// message ChatMessage {
+//   string from = 1;
+//   string text = 2;
+// }

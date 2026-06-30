@@ -1,0 +1,10 @@
+params:
+  chats_per_sup: 4000
+  client_base_rate: 100
+  client_ceil_rate: 400
+  clients_per_server: 5
+  fault_pause_ms: 5000
+  msg_type: error
+  num_supervisor: 1
+  test_duration_seconds: 60
+  test_type: detection_time
