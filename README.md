@@ -1,6 +1,7 @@
 # Benchmarking Fault-Tolerance Characteristics of Actor-Based Runtimes
 
 [![DOI](https://img.shields.io/badge/DOI-10.3390%2Fcomputers15070439-blue)](https://doi.org/10.3390/computers15070439)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21360343.svg)](https://doi.org/10.5281/zenodo.21360343)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
 This repository contains the complete benchmark framework, source code, automation scripts, experimental artefacts, and replication package accompanying the published paper:
@@ -203,6 +204,12 @@ If you use this benchmark or any part of its implementation in your research, pl
   doi     = {10.3390/computers15070439}
 }
 ```
+
+---
+
+# Replication package (Zenodo)
+
+https://doi.org/10.5281/zenodo.21360343
 
 ---
 
